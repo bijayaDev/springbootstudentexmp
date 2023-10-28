@@ -17,9 +17,9 @@ public interface StudentRepository extends JpaRepository<Student, Integer>{
     public List<Student> getAllStudents();
     @Query(value = "select * from student" , nativeQuery = true)
     public List<Student> getStudent();
-    public List<Student> findAllByOrderByName(String name);
+  //  public List<Student> findAllByOrderByName(String name);
 
-    @Query("SELECT s FROM Student s WHERE s.name = :n")
-    public List<Student> getAllStudents(@Param("n") String name);
+    //Query("SELECT s FROM Student s WHERE s.name = :n")
+   // public List<Student> getAllStudents(@Param("n") String name);
 
 }
